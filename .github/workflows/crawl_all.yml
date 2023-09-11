@@ -25,7 +25,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r _src/requirements.txt
       - name: Import GPG
-        uses: crazy-max/ghaction-import-gpg@v5
+        uses: crazy-max/ghaction-import-gpg@v6
         with:
           gpg_private_key: ${{secrets.GPG_PRIVATE_KEY}}
           passphrase: ${{secrets.PASSPHRASE}}
